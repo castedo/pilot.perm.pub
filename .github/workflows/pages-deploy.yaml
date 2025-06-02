@@ -18,12 +18,12 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     container:
-      image: registry.gitlab.com/perm.pub/dock/baseprinter:25103-53f
+      image: registry.gitlab.com/perm.pub/dock/baseprinter:25231-dc5
     steps:
       - name: "Checkout BaseprintPress config (list of Document Succession Identifiers)"
         uses: actions/checkout@v4
       - name: "Install BaseprintPress"
-        run: pip install baseprintpress@git+https://gitlab.com/perm.pub/baseprintpress.git@main
+        run: pip install baseprintpress@git+https://gitlab.com/perm.pub/baseprintpress.git@0.1.1
       - name: "Generate pages for Baseprint document successions"
         run: baseprintpress
       - uses: actions/upload-pages-artifact@v3
