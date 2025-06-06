@@ -23,7 +23,7 @@ jobs:
       - name: "Checkout BaseprintPress config (list of Document Succession Identifiers)"
         uses: actions/checkout@v4
       - name: "Install BaseprintPress"
-        run: pip install baseprintpress@git+https://gitlab.com/perm.pub/baseprintpress.git@0.1.1
+        run: pip install baseprintpress@git+https://gitlab.com/perm.pub/baseprintpress.git@0.2.1
       - name: "Generate pages for Baseprint document successions"
         run: baseprintpress
       - uses: actions/upload-pages-artifact@v3
