@@ -27,7 +27,7 @@ jobs:
       - name: "Install BaseprintPress"
         run: pip install baseprintpress@git+https://gitlab.com/perm.pub/baseprintpress.git@0.3.1
       - name: "Generate pages for Baseprint document successions"
-        run: baseprintpress build
+        run: baseprintpress
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
